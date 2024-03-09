@@ -1,0 +1,16 @@
+{
+  "name": "Intro to Computer Science",
+  "description": "Presentation on an intro to Computer Science for school students ",
+  "repository": "https://github.com/rebeccarich/intro-to-comp-science",
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-nodejs"
+    }
+  ]
+}
