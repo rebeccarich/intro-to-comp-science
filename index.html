@@ -7,20 +7,692 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>reveal.js</title>
+    <title>Intro to Computer Science</title>
+
+    <link rel="icon" href="./assets/laptop.svg" />
 
     <link rel="stylesheet" href="./dist/reset.css" />
     <link rel="stylesheet" href="./dist/reveal.css" />
-    <link rel="stylesheet" href="./dist/theme/black.css" />
+    <link rel="stylesheet" href="./dist/theme/moon.css" />
 
     <!-- Theme used for syntax highlighted code -->
     <link rel="stylesheet" href="./plugin/highlight/monokai.css" />
   </head>
+
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
+        <section>
+          <h2>Paths into Computer Science</h2>
+          <img src="assets/girl-techie.svg" width="370px" />
+          <p>Rebecca Richards</p>
+          <aside class="notes">
+            <p>Who am I? What do I do?</p>
+            <p>
+              Anyone thinking of doing a computer science or IT related course?
+            </p>
+            <p>Anyone done any coding?</p>
+          </aside>
+        </section>
+        <section
+          style="height: 100%"
+          data-background-image="assets/stars-bg.jpg"
+          data-background-opacity="0.9"
+        >
+          <style>
+            .fragment.shrink-up {
+              position: absolute;
+              width: 100%;
+              text-align: center;
+              line-height: 8;
+            }
+            .fragment.shrink-up.visible {
+              transform: translateY(-280px) scale(0.75);
+            }
+            .grid-3x3 {
+              display: grid;
+              position: absolute;
+              width: 100%;
+              grid-template-columns: repeat(3, 33%);
+              grid-template-rows: repeat(3, 33%);
+              grid-column-gap: 0px;
+              grid-row-gap: 0px;
+              grid-auto-rows: 200px;
+              height: calc(100% - 140px);
+              margin-top: 120px;
+              margin-bottom: 20px;
+            }
+            .box {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              transition: transform;
+              opacity: 0.5;
+            }
+            .box.highlight {
+              transform: scale(1.5);
+              opacity: 1;
+            }
+            .box p {
+              font-size: 16px;
+              text-transform: uppercase;
+              color: #97feed;
+              margin: 8px 0 0 0;
+            }
+            .box label {
+              font-size: 12px;
+              color: white;
+              font-weight: 100;
+            }
+            .box img {
+              width: 100px;
+              margin: 0;
+            }
+            .box-1 {
+              grid-area: 2 / 2 / 3 / 3;
+            }
+            .box-2 {
+              grid-area: 2 / 3 / 3 / 4;
+            }
+            .box-3 {
+              grid-area: 2 / 1 / 3 / 2;
+            }
+            .box-4 {
+              grid-area: 3 / 2 / 4 / 3;
+            }
+            .box-5 {
+              grid-area: 1 / 2 / 2 / 3;
+            }
+            .box-6 {
+              grid-area: 1 / 3 / 2 / 4;
+            }
+            .box-7 {
+              grid-area: 1 / 1 / 2 / 2;
+            }
+            .box-8 {
+              grid-area: 3 / 3 / 4 / 4;
+            }
+            .box-9 {
+              grid-area: 3 / 1 / 4 / 2;
+            }
+          </style>
+
+          <h2 class="fragment custom shrink-up" data-fragment-index="0">
+            What is Computer Science?
+          </h2>
+
+          <div
+            class="grid-3x3 fragment current-visible"
+            data-fragment-index="0"
+          >
+            <div class="box box-1"></div>
+            <div class="box box-2 highlight">
+              <img src="assets/saturn-1.svg" />
+              <p>Cybersecurity</p>
+              <label>
+                Protection of computer systems from malicious actors
+              </label>
+            </div>
+          </div>
+
+          <div class="grid-3x3 fragment current-visible">
+            <div class="box box-1"></div>
+            <div class="box box-2">
+              <img src="assets/saturn-1.svg" />
+            </div>
+            <div class="box box-3 highlight">
+              <img src="assets/saturn-2.svg" />
+              <p>Data Science</p>
+              <label> Using computers to extract insights from data </label>
+            </div>
+          </div>
+
+          <div class="grid-3x3 fragment current-visible">
+            <div class="box box-1"></div>
+            <div class="box box-2">
+              <img src="assets/saturn-1.svg" />
+            </div>
+            <div class="box box-3">
+              <img src="assets/saturn-2.svg" />
+            </div>
+            <div class="box box-4 highlight">
+              <img src="assets/rocket.svg" />
+              <p>Game Development</p>
+              <label>Designing and building computer games</label>
+            </div>
+          </div>
+
+          <div class="grid-3x3 fragment current-visible">
+            <div class="box box-1"></div>
+            <div class="box box-2">
+              <img src="assets/saturn-1.svg" />
+            </div>
+            <div class="box box-3">
+              <img src="assets/saturn-2.svg" />
+            </div>
+            <div class="box box-4">
+              <img src="assets/rocket.svg" />
+            </div>
+            <div class="box box-5 highlight">
+              <img src="assets/robot.svg" />
+              <p>Artificial Intelligence</p>
+              <label>
+                Programming networks of algorithms so that they can function
+                like a human brain
+              </label>
+            </div>
+          </div>
+
+          <div class="grid-3x3 fragment current-visible">
+            <div class="box box-1"></div>
+            <div class="box box-2">
+              <img src="assets/saturn-1.svg" />
+            </div>
+            <div class="box box-3">
+              <img src="assets/saturn-2.svg" />
+            </div>
+            <div class="box box-4">
+              <img src="assets/rocket.svg" />
+            </div>
+            <div class="box box-5">
+              <img src="assets/robot.svg" />
+            </div>
+            <div class="box box-6 highlight">
+              <img src="assets/earth.svg" />
+              <p>Hardware Engineering</p>
+              <label>Designing computer components and systems</label>
+            </div>
+          </div>
+
+          <div class="grid-3x3 fragment current-visible">
+            <div class="box box-1"></div>
+            <div class="box box-2">
+              <img src="assets/saturn-1.svg" />
+            </div>
+            <div class="box box-3">
+              <img src="assets/saturn-2.svg" />
+            </div>
+            <div class="box box-4">
+              <img src="assets/rocket.svg" />
+            </div>
+            <div class="box box-5">
+              <img src="assets/robot.svg" />
+            </div>
+            <div class="box box-6">
+              <img src="assets/earth.svg" />
+            </div>
+            <div class="box box-7 highlight">
+              <img src="assets/meteor.svg" />
+              <p>Mobile Engineering</p>
+              <label>Building apps for iOS and Android</label>
+            </div>
+          </div>
+
+          <div class="grid-3x3 fragment current-visible">
+            <div class="box box-1"></div>
+            <div class="box box-2">
+              <img src="assets/saturn-1.svg" />
+            </div>
+            <div class="box box-3">
+              <img src="assets/saturn-2.svg" />
+            </div>
+            <div class="box box-4">
+              <img src="assets/rocket.svg" />
+            </div>
+            <div class="box box-5">
+              <img src="assets/robot.svg" />
+            </div>
+            <div class="box box-6">
+              <img src="assets/earth.svg" />
+            </div>
+            <div class="box box-7">
+              <img src="assets/meteor.svg" />
+            </div>
+            <div class="box box-8 highlight">
+              <img src="assets/satellite.svg" />
+              <p>Backend Software Engineering</p>
+              <label>Builds the data access layer of an application</label>
+            </div>
+          </div>
+
+          <div class="grid-3x3 fragment current-visible">
+            <div class="box box-1"></div>
+            <div class="box box-2">
+              <img src="assets/saturn-1.svg" />
+            </div>
+            <div class="box box-3">
+              <img src="assets/saturn-2.svg" />
+            </div>
+            <div class="box box-4">
+              <img src="assets/rocket.svg" />
+            </div>
+            <div class="box box-5">
+              <img src="assets/robot.svg" />
+            </div>
+            <div class="box box-6">
+              <img src="assets/earth.svg" />
+            </div>
+            <div class="box box-7">
+              <img src="assets/meteor.svg" />
+            </div>
+            <div class="box box-8">
+              <img src="assets/satellite.svg" />
+            </div>
+            <div class="box box-9 highlight">
+              <img src="assets/saturn-3.svg" />
+              <p>Frontend Software Engineering</p>
+              <label>
+                Builds the presentation layer of an application
+              </label>
+            </div>
+          </div>
+
+          <div class="grid-3x3 fragment current-visible">
+            <div class="box box-1 highlight"><p>And many, many more!</p></div>
+            <div class="box box-2">
+              <img src="assets/saturn-1.svg" />
+              <p>Cybersecurity</p>
+            </div>
+            <div class="box box-3">
+              <img src="assets/saturn-2.svg" />
+              <p>Data Science</p>
+            </div>
+            <div class="box box-4">
+              <img src="assets/rocket.svg" />
+              <p>Game Development</p>
+            </div>
+            <div class="box box-5">
+              <img src="assets/robot.svg" />
+              <p>Artificial Intelligence</p>
+            </div>
+            <div class="box box-6">
+              <img src="assets/earth.svg" />
+              <p>Hardware Engineering</p>
+            </div>
+
+            <div class="box box-7">
+              <img src="assets/meteor.svg" />
+              <p>Mobile Apps</p>
+            </div>
+            <div class="box box-8">
+              <img src="assets/satellite.svg" />
+              <p>Backend Software Engineering</p>
+            </div>
+            <div class="box box-9">
+              <img src="assets/saturn-3.svg" />
+              <p>Frontend Software Engineering</p>
+            </div>
+          </div>
+          <aside class="notes">
+            <p>
+              Computer science is the study of computation, information, and
+              automation
+            </p>
+            <p>Universe of related disciplines</p>
+
+            <p>
+              Cybersecurity: protection of computer systems from malicious
+              actors
+            </p>
+          </aside>
+        </section>
+        <section id="my-slide">
+          <style>
+            button.fancy {
+              appearance: button;
+              backface-visibility: hidden;
+              background-color: transparent;
+              border: 1px solid darkgrey;
+              color: #fff;
+              border-radius: 8px;
+              box-shadow: -1px 3px darkgrey;
+              cursor: pointer;
+              font-size: 80%;
+              text-transform: uppercase;
+              line-height: 1.15;
+              padding: 12px 24px;
+              font-family: -apple-system, system-ui, 'Segoe UI', Roboto,
+                'Helvetica Neue', Ubuntu, sans-serif;
+              transition: all 0.2s, box-shadow 0.08s ease-in;
+              user-select: none;
+              -webkit-user-select: none;
+              outline: none;
+              overflow: hidden;
+            }
+            button.fancy:active {
+              box-shadow: none;
+              transform: translateY(5px);
+            }
+          </style>
+          <h2>Frontend Software Engineering</h2>
+          <pre>
+			<code class="hljs html" data-trim >
+				<script type="text/javascript">
+					function clicked() {
+			    const mySlide = document.getElementById('my-slide')
+				   const colour1 = 'grey'
+				   const colour2 = 'purple'
+
+				   if(mySlide.style.backgroundColor === colour1) {
+				     mySlide.style.backgroundColor = colour2
+				   } else {
+					   mySlide.style.backgroundColor = colour1
+				   }
+			  	}
+				</script>
+
+				<button onclick="clicked()">Click Me</button>
+			</code>
+		  </pre>
+          <script type="text/javascript">
+            function clicked() {
+              const mySlide =
+                document.getElementById('my-slide').parentElement.parentElement
+              if (mySlide.style.backgroundColor !== 'rebeccapurple') {
+                mySlide.style.backgroundColor = 'rebeccapurple'
+              } else {
+                mySlide.style.backgroundColor = ''
+              }
+            }
+          </script>
+          <button id="change-colour" class="fancy" onclick="clicked()">
+            Click Me
+          </button>
+          <aside class="notes">
+            <p>I write code that changes the state of the User Interface</p>
+            <p>Can anyone guess what will happen when I click the button?</p>
+            <p>This slide deck is a website</p>
+            <p>Process</p>
+            <ul>
+              <li>Product manager - Requirements</li>
+              <li>User Experience Designer</li>
+              <li>Frontend Engineer - Translate design into code</li>
+            </ul>
+          </aside>
+        </section>
+        <section>
+          <style>
+            .grid {
+              display: flex;
+              column-gap: 40px;
+              justify-content: center;
+              align-items: center;
+              div {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-shrink: 0;
+              }
+              h6 {
+                color: #97feed;
+                margin: 0;
+              }
+              label {
+                font-size: 16px;
+              }
+            }
+          </style>
+          <h2>The Team</h2>
+          <div class="grid">
+            <div>
+              <img src="assets/manager.svg" width="180px" />
+              <h6>product manager</h6>
+            </div>
+            <div>➡️</div>
+            <div>
+              <img src="assets/designer.svg" width="180px" />
+              <h6>UX Designer</h6>
+            </div>
+            <div>➡️</div>
+            <div>
+              <img src="assets/engineer.svg" width="180px" />
+              <h6>Software Engineer</h6>
+            </div>
+            <div>➡️</div>
+            <div>
+              <img src="assets/tester.svg" width="180px" />
+              <h6>QA Tester</h6>
+            </div>
+          </div>
+        </section>
+        <section
+          data-background-video="./assets/ipod-ad.mp4"
+          data-state="next-after-video"
+        >
+          <aside class="notes">
+            <p>Does anyone know what this is an ad for?</p>
+          </aside>
+        </section>
+        <section>
+          <style>
+            .info {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: #fff;
+              font-size: 50px;
+              column-gap: 15px;
+            }
+          </style>
+          <div class="info">
+            <img src="assets/ipod.svg" width="150px" />
+            +
+            <img src="assets/laptop.svg" width="150px" />
+            =
+            <img src="assets/music.svg" width="150px" />
+          </div>
+          <aside class="notes">
+            <p>When I was about 16 I got an iPod</p>
+            <p>How do I get music on this thing?</p>
+            <p>CDs</p>
+            <p>I need to get more music</p>
+            <p>Had a problem, solved it with computers</p>
+            <p>Decided I needed to learn more</p>
+          </aside>
+        </section>
+        <section>
+          <style>
+            .grid-2x4 {
+              display: grid;
+              grid-template-columns: repeat(3, 1fr);
+              grid-template-rows: 1fr;
+              column-gap: 40px;
+              margin-bottom: 60px;
+              > div {
+                label {
+                  font-size: 16px;
+                  display: block;
+                }
+              }
+            }
+          </style>
+          <div style="margin-bottom: 60px">
+            <h2>So, what next?</h2>
+            <p>There are loads of courses at all levels</p>
+          </div>
+          <div class="grid-2x4">
+            <div>
+              <h6>Level 6</h6>
+              <label>Computing Information Technology - TUD</label>
+              <label>Certificate in Computer Science - Maynooth</label>
+            </div>
+            <div>
+              <h6>Level 7</h6>
+              <label>Computing Information Technology - TUD</label>
+              <label>Computing Science - Griffith College</label>
+            </div>
+            <div>
+              <h6>Level 8+</h6>
+              <label>Computer Science - UCD, Trinity, DCU</label>
+              <label>Creative Computing - IADT</label>
+              <label>Data Science - DCU</label>
+            </div>
+          </div>
+          <p>Do I need to go to college?</p>
+          <p>Do I need to be a Maths genius?</p>
+          <aside class="notes">
+            <p>Do I need to go to college? - recommend it</p>
+            <p>College teaches you how to self-learn</p>
+            <p>Dropped out and did more hands-on course</p>
+            <p>There are general Computer Science courses - broad base</p>
+            <p>
+              There are more specific courses eg: Data Science, Cloud Computing
+            </p>
+            <p>
+              Can do a general course and then specialize with a 1 year add-on
+            </p>
+          </aside>
+        </section>
+        <section>
+          <h2>Career Path</h2>
+          <div class="grid" style="margin-top: 60px">
+            <div>
+              <h6>Intern</h6>
+              <label>€0-30k</label>
+              <label>0 years</label>
+            </div>
+            <div>➡️</div>
+            <div>
+              <h6>Junior</h6>
+              <label>€45-60k</label>
+              <label>1-3 years</label>
+            </div>
+            <div>➡️</div>
+            <div>
+              <h6>Mid-level</h6>
+              <label>€65-75k</label>
+              <label>3-5 years</label>
+            </div>
+            <div>➡️</div>
+            <div>
+              <h6>Senior</h6>
+              <label>€80k+</label>
+              <label>5-7+ years</label>
+            </div>
+            <div>➡️</div>
+            <div>
+              <h6>Staff</h6>
+              <label>€110-130k</label>
+              <label>>7 years</label>
+            </div>
+            <div>➡️</div>
+            <div>
+              <h6>Principal</h6>
+              <label>€120-140k</label>
+              <label>Years vary</label>
+            </div>
+          </div>
+          <hr style="margin-top: 60px; opacity: 0.3" />
+          <div class="grid" style="margin-top: 60px">
+            <div>
+              <h6>Lead Engineer</h6>
+              <label>€120-140k</label>
+              <label>Years vary (usually need to be Senior+ first)</label>
+            </div>
+            <div>➡️</div>
+            <div>
+              <h6>Senior Lead</h6>
+              <label>€140-160k</label>
+              <label>Years vary</label>
+            </div>
+            <div>➡️</div>
+            <div>
+              <h6>Director</h6>
+              <label>€160-200k</label>
+              <label>Years vary</label>
+            </div>
+            <div>➡️</div>
+            <div>
+              <h6>VP</h6>
+              <label>€200k+</label>
+              <label>Years vary</label>
+            </div>
+            <div>➡️</div>
+            <div>
+              <h6>SVP</h6>
+              <label>Varies</label>
+              <label>Years vary</label>
+            </div>
+            <div>➡️</div>
+            <div>
+              <h6>CTO</h6>
+              <label>Varies</label>
+              <label>Years vary</label>
+            </div>
+          </div>
+          <aside class="notes">
+            <p>Levels - up to CTO (examples)</p>
+            <p>Salary</p>
+            <p>Different tracks</p>
+          </aside>
+        </section>
+        <section>
+          <style>
+            .grid-2x1 {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              grid-template-rows: 1fr;
+              column-gap: 40px;
+              margin-bottom: 60px;
+              > div {
+                label {
+                  font-size: 16px;
+                  display: block;
+                }
+              }
+              ul {
+                margin: 0;
+              }
+              li {
+                list-style: square;
+                font-size: 28px;
+                line-height: 1.3;
+              }
+            }
+          </style>
+          <h2>Pros & Cons</h2>
+          <div class="grid-2x1">
+            <div class="fragment">
+              <h6>Pros</h6>
+              <ul>
+                <li>Flexibility / Working from home</li>
+                <li>Travel</li>
+                <li>Salary</li>
+                <li>
+                  People using something you've built</li>
+                </li>
+              </ul>
+            </div>
+            <div class="fragment">
+              <h6>Cons</h6>
+              <ul>
+                <li>Tight deadlines at times</li>
+                <li>You break it, you fix it</li>
+                <li>Dealing with legacy code</li>
+                <li>Lack of diversity</li>
+              </ul>
+            </div>
+          </div>
+          <aside class="notes">
+            <p>Why is lack of diversity bad?</p>
+            <p>Love seeing something I've built being used in the wild</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Is this the career for me?</h2>
+          <p class="fragment">Like problem solving ✅</p>
+          <p class="fragment">Good self-learner ✅</p>
+          <p class="fragment">Excited about technology ✅</p>
+          <aside class="notes">
+            <p>Computer science is very broad</p>
+            <p>If you like problem solving this might be for you</p>
+          </aside>
+        </section>
+        <section>
+          <h2>Thanks!</h2>
+        </section>
       </div>
     </div>
 
@@ -34,10 +706,41 @@
       // - https://revealjs.com/config/
       Reveal.initialize({
         hash: true,
+        defaultTiming: 120,
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-      });
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+      })
+
+      // reset slide background colour
+      Reveal.on('slidechanged', (event) => {
+        document.getElementById(
+          'my-slide'
+        ).parentElement.parentElement.style.backgroundColor = ''
+      })
+
+      // custom event - go to next slide after video ended
+      // will run for every video background element with data-state="next-after-video" attribute
+      Reveal.addEventListener('next-after-video', () =>
+        registerVideoOnEnd(true)
+      )
+
+      function registerVideoOnEnd(retryLater) {
+        const video = document.querySelector('.slide-background.present video')
+        if (video === null) {
+          if (!retryLater) {
+            console.log('no video found')
+            return
+          }
+          window.setTimeout(registerVideoOnEnd, 1)
+          return
+        }
+        console.log('video found, will go to next slide when it ends')
+        video.onended = (e) => {
+          console.log('going to next slide after video ended')
+          Reveal.next()
+        }
+      }
     </script>
   </body>
 </html>
